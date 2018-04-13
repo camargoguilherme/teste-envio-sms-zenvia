@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+	<script src="js/zenvia.js"></script>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+    <div class="container col s12">
+    	<h1 align="center" ="center">Teste Zenvia</h1>
+		<form >
+			<div class="form-group">
+				<label for="telefone">Telefone para Envio</label>
+				<input type="tel" class="form-control" id="telefone" aria-describedby="telHelp" placeholder="Telefone" value="43984231673">
+				<small id="telHelp" class="form-text text-muted">Numero para envio de SMS.</small>
+				</div>
+				<div class="form-group">
+				<label for="mensagem">Mensagem</label>
+				<input type="text" class="form-control" id="mensagem" placeholder="Mensagem" value="Teste de envio Zenvia">
+				</div>
+				<div class="form-group form-check">
+				<input type="checkbox" class="form-check-input" id="check">
+				<label class="form-check-label" for="exampleCheck1">Confirmar</label>
+			</div>
+			<button id="enviar" type="submit" class="btn btn-primary" action="sendSMS()">Enviar</button>
+		</form>
+
+		<button id="teste" class="btn btn-primary" onclick="sendSMS()" >TESTE</button>
+	</div>
+
+	
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    
+    <script>
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		$(document).ready(function () {
+			// body...
+			$( "#enviar" ).submit(function( event ) {
+			  alert( "Handler for .submit() called." );
+			  event.preventDefault();
+			});
+
+			function teste(){
+				alert("Botao teste precionado");
+			}
+		});
+		
+	</script>
+  </body>
+</html>
